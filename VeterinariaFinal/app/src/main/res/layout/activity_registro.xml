@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Users.Registro">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="256dp"
+        android:text="Cargar imagen*"
+        android:textColor="@color/black"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.058"
+        app:layout_constraintStart_toEndOf="@+id/bSeleccionarimg"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.04" />
+
+    <ImageView
+        android:id="@+id/imgID2"
+        android:layout_width="68dp"
+        android:layout_height="57dp"
+        android:src="?attr/actionBarItemBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.949"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.03" />
+
+    <ImageView
+        android:id="@+id/bSeleccionarimg4"
+        android:layout_width="39dp"
+        android:layout_height="35dp"
+        android:onClick="onclick"
+        android:src="@android:drawable/ic_menu_camera"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.043"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.026"
+        app:srcCompat="@drawable/camera" />
+
+    <ImageButton
+        android:id="@+id/bValidar"
+        android:layout_width="50dp"
+        android:layout_height="46dp"
+        android:background="@android:drawable/list_selector_background"
+        android:scaleType="centerInside"
+        android:scaleX="1"
+        android:scaleY="1"
+        android:src="@drawable/validar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.464"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.983" />
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="367dp"
+        android:layout_height="500dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.363"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.48000002">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="15dp">
+
+            <TextView
+                android:id="@+id/labelInformativo4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Datos Acceso"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="15dp">
+
+            <TextView
+                android:id="@+id/labelUserRegistro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Usuario"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/txtUsuarioRegistro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Inserte Usuario"
+                android:inputType="textPersonName"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="15dp">
+
+            <TextView
+                android:id="@+id/labelNombre2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contraseña"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/txtPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Inserte Contraseña"
+                android:inputType="textPassword"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="15dp">
+
+            <TextView
+                android:id="@+id/labelInformativo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Datos Personales"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="15dp">
+
+            <TextView
+                android:id="@+id/labelNombre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nombre"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/txtNombre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Inserte Nombre"
+                android:inputType="textPersonName"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="15dp">
+
+            <TextView
+                android:id="@+id/labelApellidos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Apellidos"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/txtApellidos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Inserte Apellidos"
+                android:inputType="textPersonName"
+                android:textColor="@color/black"
+                android:textColorHighlight="#FFFFFF"
+                android:textColorLink="#FFFFFF"
+                android:textSize="16sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="15dp">
+
+            <TextView
+                android:id="@+id/labelDNI"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DNI/NIE"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/txtDNI"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Inserte DNI"
+                android:inputType="textPersonName"
+                android:textColor="@color/black"
+                android:textColorHighlight="#FFFFFF"
+                android:textColorLink="#FFFFFF"
+                android:textSize="16sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="15dp">
+
+            <TextView
+                android:id="@+id/labelTelefono"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Teléfono"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/txtTelefono"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Inserte Telefono"
+                android:inputType="textPersonName"
+                android:textColor="@color/black"
+                android:textColorHighlight="#FFFFFF"
+                android:textColorLink="#FFFFFF"
+                android:textSize="16sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="15dp">
+
+            <TextView
+                android:id="@+id/labelInformativo3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Datos domicilio"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="15dp">
+
+            <TextView
+                android:id="@+id/labelDomicilio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Domicilio"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/txtDomicilio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Inserte Domicilio"
+                android:inputType="textPersonName"
+                android:textColor="@color/black"
+                android:textColorHighlight="#FFFFFF"
+                android:textColorLink="#FFFFFF"
+                android:textSize="16sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="15dp">
+
+            <TextView
+                android:id="@+id/labelCiudad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ciudad"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/txtCiudad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Inserte Ciudad"
+                android:inputType="textPersonName"
+                android:textColor="@color/black"
+                android:textColorHighlight="#FFFFFF"
+                android:textColorLink="#FFFFFF"
+                android:textSize="16sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="369dp"
+            android:layout_height="64dp"
+            android:layout_marginRight="15dp">
+
+            <TextView
+                android:id="@+id/labelPoblacion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Población"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/txtPoblacion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Inserte Población"
+                android:inputType="textPersonName"
+                android:textColor="@color/black"
+                android:textColorHighlight="#FFFFFF"
+                android:textColorLink="#FFFFFF"
+                android:textSize="16sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="15dp">
+
+            <TextView
+                android:id="@+id/labelCodigoPostal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Codigo Postal"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/txtCP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:ems="10"
+                android:hint="Inserte CP"
+                android:inputType="textPersonName"
+                android:textColor="@color/black"
+                android:textColorHighlight="#FFFFFF"
+                android:textColorLink="#FFFFFF"
+                android:textSize="16sp" />
+        </TableRow>
+    </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

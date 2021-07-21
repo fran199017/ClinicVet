@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">ClinicVet</string>
+    <!--Labels Actionbar-->
+    <string name="menu_principal">Menu Principal</string>
+    <string name="carrito">Carrito</string>
+    <string name="citas">Citas</string>
+    <string name="curiosidades">Curiosidades</string>
+    <string name="borraruser">Borrar Usuario</string>
+    <string name="historial"> Tu mascota</string>
+    <string name="main">Acceso Usuario</string>
+    <string name="misanimales">Mis animales</string>
+    <string name="publicacion">Publicacion</string>
+    <string name="admin">Menu Administrador</string>
+    <string name="registro">Registro</string>
+    <string name="registroanimal">Registrar Mascota</string>
+    <string name="registrocita">Registrar Cita</string>
+    <string name="tienda">Tienda</string>
+    <string name="cuidados">Cuidados e higiene</string>
+
+
+</resources>

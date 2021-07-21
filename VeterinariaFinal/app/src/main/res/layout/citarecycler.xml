@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/itemcitas"
+        android:layout_width="395dp"
+        android:layout_height="106dp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginBottom="10dp"
+        app:cardBackgroundColor="@color/teal_200"
+        app:cardCornerRadius="10dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/bConfirmardelete2"
+                android:layout_width="92dp"
+                android:layout_height="73dp"
+                android:background="@android:color/holo_red_dark"
+                android:enabled="false"
+                android:text="Pulsa para borrar"
+                android:textColor="#050505"
+                android:textColorHighlight="#E60808"
+                android:textColorLink="#00BCD4"
+                android:textSize="12sp"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/bDelete"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/TablaCitas"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/deletemascota" />
+
+            <TableLayout
+                android:id="@+id/TablaCitas"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:gravity="center_horizontal"
+                android:paddingHorizontal="40dp"
+                android:paddingTop="15dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.53"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.18">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/fecha"
+                        android:layout_width="100dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/bordes"
+                        android:paddingHorizontal="2dp"
+                        android:text="Fecha"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/hora"
+                        android:layout_width="100dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/bordes"
+                        android:paddingHorizontal="2dp"
+                        android:text="Hora"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/doctor"
+                        android:layout_width="100dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/bordes"
+                        android:paddingHorizontal="2dp"
+                        android:text="Doctor"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/fecha2"
+                        android:layout_width="100dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/bordes"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textColorHighlight="#F8F8F8"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:id="@+id/hora2"
+                        android:layout_width="100dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/bordes"
+                        android:paddingHorizontal="2dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textColorHighlight="#F8F8F8"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:id="@+id/doctor2"
+                        android:layout_width="100dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/bordes"
+                        android:paddingHorizontal="2dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textColorHighlight="#F8F8F8"
+                        android:textStyle="normal" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/motivo"
+                        android:layout_width="160dp"
+                        android:layout_height="20dp"
+                        android:layout_span="3"
+                        android:background="@drawable/bordes"
+                        android:paddingHorizontal="2dp"
+                        android:text="Motivo"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/motivo2"
+                        android:layout_width="80dp"
+                        android:layout_height="20dp"
+                        android:layout_span="3"
+                        android:background="@drawable/bordes"
+                        android:paddingHorizontal="2dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textColorHighlight="#F8F8F8"
+                        android:textStyle="normal" />
+                </TableRow>
+
+            </TableLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

@@ -1,0 +1,3 @@
+include ':connectorsql'
+include ':app'
+rootProject.name = "VeterinariaFinal"

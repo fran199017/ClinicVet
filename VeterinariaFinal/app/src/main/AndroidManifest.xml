@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.veterinariafinal">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.VeterinariaFinal">
+        <activity android:name=".Cuidados.Cuidados"></activity>
+        <activity
+            android:name=".Tienda.Carrito"
+            android:label="@string/carrito" />
+        <activity
+            android:name=".Administrador.PublicarProducto"
+            android:label="@string/publicacion" />
+        <activity
+            android:name=".Tienda.Tienda"
+            android:label="@string/tienda" />
+        <activity
+            android:name=".Administrador.PublicarCuriosidades"
+            android:label="@string/publicacion" />
+        <activity
+            android:name=".Administrador.AdministradorMenu"
+            android:label="@string/admin" />
+        <activity
+            android:name=".Curiosidades.Curiosidades"
+            android:label="@string/curiosidades" />
+        <activity
+            android:name=".pkCitas.RegistroCita"
+            android:label="@string/registrocita" />
+        <activity
+            android:name=".pkCitas.Citas"
+            android:label="@string/citas" />
+        <activity
+            android:name=".Animales.HistorialAnimal"
+            android:label="@string/historial" />
+        <activity android:name=".Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Animales.RegistroAnimal"
+            android:label="@string/registroanimal" />
+        <activity
+            android:name=".Users.DeleteUser"
+            android:label="@string/borraruser" />
+        <activity
+            android:name=".Users.Registro"
+            android:label="@string/registro" />
+        <activity
+            android:name=".Animales.MisAnimales"
+            android:label="@string/misanimales" />
+        <activity
+            android:name=".Menu"
+            android:label="@string/menu_principal" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/main" />
+    </application>
+
+</manifest>

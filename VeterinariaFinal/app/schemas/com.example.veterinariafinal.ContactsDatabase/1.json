@@ -1,0 +1,94 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "8156a308230336d90b60aff9f2d0ef6d",
+    "entities": [
+      {
+        "tableName": "tblusuarios",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `user` TEXT, `contraseña` TEXT, `nombre` TEXT, `apellidos` TEXT, `dni` TEXT, `telefono` TEXT, `domicilio` TEXT, `ciudad` TEXT, `poblacion` TEXT, `codigopostal` TEXT)",
+        "fields": [
+          {
+            "fieldPath": "contactId",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "user",
+            "columnName": "user",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "contraseña",
+            "columnName": "contraseña",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "nombre",
+            "columnName": "nombre",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "apellidos",
+            "columnName": "apellidos",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "dni",
+            "columnName": "dni",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "telefono",
+            "columnName": "telefono",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "domicilio",
+            "columnName": "domicilio",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "ciudad",
+            "columnName": "ciudad",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "poblacion",
+            "columnName": "poblacion",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "codigopostal",
+            "columnName": "codigopostal",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "id"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '8156a308230336d90b60aff9f2d0ef6d')"
+    ]
+  }
+}
